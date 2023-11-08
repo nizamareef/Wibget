@@ -1,0 +1,87 @@
+/* Style the widget container */
+body{
+    background-color: rgba(241, 243, 217, 0.63);
+}
+
+.coinmarketcap-currency-widget {
+    display: flex;
+    max-width: 60%;
+    margin-top: 5%;
+    margin:3% auto ;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+
+/* Style widget input section */
+.widget-input {
+    flex: 1;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 5px;
+    margin: 5px 0;
+}
+.price{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.widget-data {
+    width:70%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 20%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.name{
+    margin-left: 20%;
+}
+.widget-token-name {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.widget-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.widget-col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40%;
+    margin-right: 5%;
+}
+
+.widget-label {
+    flex: 1;
+    font-weight: bold;
+    margin-bottom: 8%;   
+    margin-right: 20%;
+}
+
+.widget-value {
+    display: flex;
+}

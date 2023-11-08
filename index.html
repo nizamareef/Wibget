@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 style="color:rgb(144, 21, 21);text-align: center;margin-top:7%;">Coin Ticker Widget</h1>
+    <div class="coinmarketcap-currency-widget">
+        <div class="widget-input">
+            <form id="token-form">
+                <label for="token-name">Cryptocurrency</label>
+                <select style="border-radius: 10px;" id="token-name" required>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="tether">Tether</option>
+                    <option value="usd-coin">USDC</option>
+                </select>
+                <label style="margin-top: 4%;"for=" Currency">Fiat Currency</label>
+                <select style="border-radius: 10px;" id="Currency" required>
+                    <option value="usd">USD</option>
+                    <option value="brl">BRL</option>
+                    <option value="cad">CAD</option>
+                </select>
+            </form>
+        </div>
+        <div class="widget-data">
+            <div class="widget-token-name">
+                <img alt="token-image" id="token-image">
+                <div class="name">
+                    <span id="token-name-value" style="color: brown;"></span>
+                    (<span id="symbol"></span>)
+                    <div> <span id="current-price" class="price"></span></div>
+                   
+                </div> 
+            </div>
+            <hr >
+            <div class="widget-details">
+                <div class="widget-row">
+                    
+                    <div class="widget-box">
+                        <div class="widget-label">Market Cap </div>
+                        <div class="widget-value" id="market-cap"></div>
+                    </div>
+                    <div class="widget-box">
+                        <div class="widget-label">Volume</div>
+                        <div class="widget-value" id="volume"></div>
+                    </div>
+                    <div class="widget-box">
+                        <div class="widget-label">Rank </div>
+                        <div class="widget-value" id="rank"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://coinmarketcap.com/widget/ticker/" style=" text-decoration: none;text-align:center;margin-top: 5%;">Powered by CoinMarketCap</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
